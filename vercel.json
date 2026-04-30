@@ -1,7 +1,6 @@
 {
-  "buildCommand": "cd sahayak-frontend && npm install && npm run build",
+  "buildCommand": "npm install --prefix sahayak-frontend && npm run build --prefix sahayak-frontend",
   "outputDirectory": "sahayak-frontend/dist",
-  "framework": "vite",
   "rewrites": [
     { "source": "/(.*)", "destination": "/index.html" }
   ]
