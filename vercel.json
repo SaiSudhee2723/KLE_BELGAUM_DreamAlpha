@@ -1,0 +1,8 @@
+{
+  "buildCommand": "cd sahayak-frontend && npm install && npm run build",
+  "outputDirectory": "sahayak-frontend/dist",
+  "framework": "vite",
+  "rewrites": [
+    { "source": "/(.*)", "destination": "/index.html" }
+  ]
+}
