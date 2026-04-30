@@ -1,0 +1,7 @@
+{
+  "name": "asteria-health-root",
+  "private": true,
+  "scripts": {
+    "build": "npm install --prefix sahayak-frontend && npm run build --prefix sahayak-frontend"
+  }
+}
