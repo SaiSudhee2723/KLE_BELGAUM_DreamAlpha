@@ -5,11 +5,9 @@ services:
     region: singapore
     plan: free
     buildCommand: >
-      pip install uv &&
-      uv venv --clear &&
-      uv pip install -r requirements.txt &&
-      uv run python data/ingest_guidelines.py
-    startCommand: uv run uvicorn main:app --host 0.0.0.0 --port $PORT
+      pip install -r requirements.txt &&
+      python data/ingest_guidelines.py
+    startCommand: uvicorn main:app --host 0.0.0.0 --port $PORT
     envVars:
       - key: FRONTEND_URL
         value: https://sahayak-ai.vercel.app
